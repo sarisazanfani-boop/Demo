@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="تماس با عمران‌سام — درخواست مشاوره و دمو." />
+    <link rel="icon" href="/logo.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>تماس | عمران‌سام</title>
+  </head>
+  <body class="overflow-x-hidden">
+    <header data-site-header class="site-header"></header>
+
+    <section class="page-hero">
+      <div class="absolute inset-0 bg-grid-pattern bg-grid opacity-30"></div>
+      <div class="relative mx-auto max-w-7xl px-4 text-center lg:px-8">
+        <span class="section-label">تماس</span>
+        <h1 class="section-title mt-4 mb-5">درخواست مشاوره</h1>
+        <p class="section-subtitle">فرم را پر کنید تا برای هماهنگی جلسه کوتاه با شما تماس بگیریم.</p>
+      </div>
+    </section>
+
+    <main class="py-20 md:py-28">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 lg:grid-cols-5 lg:gap-12 lg:px-8">
+        <div class="contact-aside lg:col-span-2" data-reveal>
+          <div class="absolute -left-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl"></div>
+          <div class="relative">
+            <span class="inline-block rounded-full bg-white/10 px-3 py-1 text-xs font-bold">جلسه آشنایی</span>
+            <h2 class="mt-4 mb-6 text-2xl font-bold">در این جلسه چه می‌شود؟</h2>
+            <ul class="space-y-4">
+              <li class="info-card">
+                <span class="icon-box-accent !h-10 !w-10 shrink-0 !bg-white/15 !text-accent !ring-white/20">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+                </span>
+                <div>
+                  <p class="font-bold">دیدن سامانه</p>
+                  <p class="mt-1 text-sm text-blue-100">نمایش ماژول‌ها بر اساس نیاز شرکت شما</p>
+                </div>
+              </li>
+              <li class="info-card">
+                <span class="icon-box-accent !h-10 !w-10 shrink-0 !bg-white/15 !text-accent !ring-white/20">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                </span>
+                <div>
+                  <p class="font-bold">برآورد هزینه</p>
+                  <p class="mt-1 text-sm text-blue-100">پیشنهاد پکیج و زمان تحویل متناسب با مقیاس کار</p>
+                </div>
+              </li>
+              <li class="info-card">
+                <span class="icon-box-accent !h-10 !w-10 shrink-0 !bg-white/15 !text-accent !ring-white/20">
+                  <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </span>
+                <div>
+                  <p class="font-bold">پاسخ به سؤالات</p>
+                  <p class="mt-1 text-sm text-blue-100">استقرار، آموزش، نگهداری و شرایط قرارداد</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="contact-panel lg:col-span-3" data-reveal>
+          <h2 class="mb-2 text-xl font-bold text-slate-900">اطلاعات تماس</h2>
+          <p class="mb-6 text-sm text-muted">فیلدهای ستاره‌دار الزامی هستند.</p>
+          <form id="contact-form" class="space-y-5">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <div>
+                <label for="name" class="form-label">نام و نام خانوادگی *</label>
+                <input id="name" name="name" required type="text" class="form-input" placeholder="نام کامل" />
+              </div>
+              <div>
+                <label for="company" class="form-label">نام شرکت *</label>
+                <input id="company" name="company" required type="text" class="form-input" placeholder="نام رسمی شرکت" />
+              </div>
+            </div>
+            <div>
+              <label for="phone" class="form-label">شماره تماس *</label>
+              <input id="phone" name="phone" required type="tel" dir="ltr" class="form-input text-left" placeholder="09123456789" />
+            </div>
+            <div>
+              <label for="message" class="form-label">توضیحات</label>
+              <textarea id="message" name="message" rows="4" class="form-input resize-none" placeholder="مثلاً تعداد پروژه‌های فعال، ماژول‌های مورد نظر، زمان مدنظر برای راه‌اندازی…"></textarea>
+            </div>
+            <button type="submit" class="btn-primary w-full !py-4">
+              ارسال درخواست
+              <svg class="h-4 w-4 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+            </button>
+            <p id="form-status" class="hidden rounded-xl bg-emerald-50 py-3 text-center text-sm font-semibold text-emerald-700"></p>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer data-site-footer class="site-footer"></footer>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

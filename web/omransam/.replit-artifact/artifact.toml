@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "عمران‌سام"
+version = "1.0.0"
+id = "artifacts/omransam"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18329
+
+[services.development]
+run = "pnpm --filter @workspace/omransam run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/omransam", "run", "build" ]
+publicDir = "artifacts/omransam/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18329"
+BASE_PATH = "/"
