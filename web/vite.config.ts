@@ -4,6 +4,8 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 export default defineConfig({
+  // GitHub Pages: /Demo/ — local: /
+  base: process.env.BASE_PATH || "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
